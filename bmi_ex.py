@@ -1,21 +1,25 @@
 # A program that calculates body mass index
 
-import random
+import math
 
-def bmi(total):
-    for i in range(18.4, 31.0):
-        total = random.float(18.4,31.0)
-        return bmi(total)
+weight = int(input("Please fill in your weight value: "))
+height = int(input("Please fill in your height value: "))
 
-    if bmi <= 8.5:
-        return "underweight"
-    elif bmi<= 25.0:
-        return "Normal"
-    elif bmi <= 30.0:
-        return "Overweight"
-    else:
-        return "Obese"
-    print(bmi(total))
+
+bmi = weight / height**2
+bmi = math.weight / height**2
+
+if bmi <= 18.5:
+    print("You are underweight")
+elif bmi <= 25.0:
+    print("Your body mass index is normal")
+elif bmi <= 30.0:
+    print("You are overweight")
+else:
+    print("You are obese")
+
+
+
 
 
 
